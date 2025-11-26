@@ -38,6 +38,31 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 150px;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a {
+      color: #03396c;
+      padding: 0.5rem 1rem;
+      display: block;
+      font-weight: normal;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
     .section {
       max-width: 900px;
       margin: 2rem auto;
@@ -83,7 +108,12 @@
   </header>
 
   <nav>
-    <a href="index.html#about">About</a>
+    <div class="dropdown">
+      <a href="index.html#about">About us ▼</a>
+      <div class="dropdown-content">
+        <a href="members.html">Members</a>
+      </div>
+    </div>
     <a href="index.html#research">Research</a>
     <a href="index.html#projects">Projects</a>
     <a href="index.html#tools">Tools</a>
