@@ -172,3 +172,16 @@
     margin-left: 0;
     }
 }
+
+
+.year-block {
+margin: 26px 0 6px 0;
+font-weight: 700;
+font-size: 1.1rem;
+color: #1f2937;
+}
+
+.pub-year-list li {
+margin: 4px 0 12px 0;
+line-height: 1.45;
+}
